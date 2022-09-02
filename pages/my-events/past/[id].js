@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Head from "next/head";
 import Link from "next/link";
 import { gql } from "@apollo/client";
 import client from "../../../apollo-client";
@@ -7,6 +8,7 @@ import { useAccount } from "wagmi";
 import connectContract from "../../../utils/connectContract";
 import formatTimestamp from "../../../utils/formatTimestamp";
 import Alert from "../../../components/Alert";
+import DashboardNav from "../../../components/DashboardNav";
 
 function PastEvent({ event }) {
   const { data: account } = useAccount();

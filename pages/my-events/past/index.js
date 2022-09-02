@@ -4,6 +4,7 @@ import { gql, useQuery } from "@apollo/client";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { useAccount } from "wagmi";
 import EventCard from "../../../components/EventCard";
+import Dashboard from "../../../components/Dashboard";
 
 const MY_PAST_EVENTS = gql`
   query Events($eventOwner: String, $currentTimestamp: String) {

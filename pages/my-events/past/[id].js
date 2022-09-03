@@ -143,7 +143,7 @@ function PastEvent({ event }) {
                   <h6 className="text-sm mt-4 mb-2">
                     {formatTimestamp(event.eventTimestamp)}
                   </h6>
-                  <h1 className="text-2xl tracking-tight font-extrabold text-gray-900 sm:text-3xl md:text-4xl mb-8">
+                  <h1 className="text-2xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl dark:text-gray-300">
                     {event.name}
                   </h1>
                   <div className="-my-2 -mx-4 overflow-x-auto sm:-mx-6 lg:-mx-8">

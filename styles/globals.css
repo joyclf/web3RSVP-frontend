@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .clickable-card .clickable-card__link::after {
   content: "";
   position: absolute;

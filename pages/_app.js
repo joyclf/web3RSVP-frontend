@@ -1,3 +1,4 @@
+import { ThemeProvider } from 'next-themes';
 import Layout from "../components/Layout";
 import "../styles/globals.css";
 import "@rainbow-me/rainbowkit/styles.css";
@@ -35,7 +36,9 @@ export default function MyApp({ Component, pageProps }) {
       <RainbowKitProvider chains={chains}>
         <ApolloProvider client={client}>
           <Layout>
-            <Component {...pageProps} />
+            <ThemeProvider attribute="class">
+              <Component {...pageProps} />
+            </ThemeProvider>
           </Layout>
         </ApolloProvider>
       </RainbowKitProvider>
